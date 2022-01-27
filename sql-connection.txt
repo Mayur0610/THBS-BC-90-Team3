@@ -1,0 +1,32 @@
+create table train(TRAIN_NO int primary key,TRAIN_NAME varchar(40),SOURCE varchar(40),DESTINATION varchar(40),TICKET_PRICE decimal(8,2));
+desc train;
+Insert into train values (1001,'Shatabdi Express','Bangalore','Delhi',2500);
+Insert into train values (1002,'Shatabdi Express','Delhi','Bangalore',2500);
+Insert into train values (1003,'Udyan Express','Bangalore','Mumbai',1500);
+Insert into train values (1004,'Udyan Express','Mumbai','Bangalore',1500);
+Insert into train values (1005,'Brindavan Express','Bangalore','Chennai',1000);
+Insert into train values (1006,'Brindavan Express','Chennai','Bangalore',1000);
+
+
+
+desc train;
+select * from train;
+
+
+
+
+
+
+Create table tbl_user(
+user_id int NOT NULL AUTO_INCREMENT,
+user_name varchar(50) NOT NULL,
+user_email varchar(50) NOT NULL,
+user_password varchar(50) NOT NULL,
+country varchar(10),
+gender varchar(5),
+PRIMARY KEY (user_id)
+);
+
+
+
+select * from tbl_user;
